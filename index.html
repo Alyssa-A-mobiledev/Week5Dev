@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leslie Auto Repair - Home</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="logo">Leslie <span>Auto Repair</span></a>
+      <button class="menu-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="appointment.html">Book Appointment</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Quality Service, Honest Prices</h1>
+        <p>Family-owned and operated. With over 25 Years of experience, Leslie Auto Repair has been keeping South
+          Florida drivers safe on the road. We treat every vehicle like it's our own.</p>
+        <a href="appointment.html" class="btn btn-primary">Schedule Service</a>
+        <a href="services.html" class="btn btn-secondary">View Our Services</a>
+      </div>
+    </section>
+
+    <!-- About Preview Section -->
+    <section class="about-preview">
+      <div class="container">
+        <div class="about-preview-content">
+          <div class="about-text">
+            <h2>Your Neighborhood Mechanic</h2>
+            <p>When Leslie opened the shop in 1985, he made a simple promise: provide honest, quality auto repair at
+              fair prices. That commitment remains at the heart of everything we do.</p>
+            <p>Our ASE-certified technicians combine decades of experience with ongoing training in the latest
+              automotive technology. Whether you drive a classic truck or a modern hybrid, we have the expertise to keep
+              you moving.</p>
+            <a href="about.html" class="btn btn-outline">Learn More About Us</a>
+
+            <div class="about-image">
+              <img src="images/Shop.jpg" alt="Exterior of Leslie Auto Repair shop">
+            </div>
+
+          </div>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-number">25+</span>
+              <span class="stat-label">Years in Business</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">15,000+</span>
+              <span class="stat-label">Vehicles Serviced</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">4.9</span>
+              <span class="stat-label">Star Rating</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Overview Section -->
+    <section class="services-overview">
+      <div class="container">
+        <h2>Our Services</h2>
+        <p class="section-subtitle">From routine maintenance to major repairs, we do it all</p>
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon">&#128295;</div>
+            <h3>General Repairs</h3>
+            <p>Engine diagnostics, brake repair, suspension work, and more. We fix problems right the first time using
+              quality parts.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">&#128739;</div>
+            <h3>Oil Changes &amp; Maintenance</h3>
+            <p>Keep your vehicle running smoothly with regular oil changes, fluid checks, filter replacements, and
+              multi-point inspections. Preventive care saves you money.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">&#9881;</div>
+            <h3>Transmission Service</h3>
+            <p>Fluid flushes, filter changes, and complete transmission repairs for both automatic and manual vehicles.
+              We specialize in extending transmission life.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">&#10052;</div>
+            <h3>Heating &amp; A/C</h3>
+            <p>Stay comfortable year-round with our climate control services. We handle refrigerant recharges,
+              compressor repairs, heater cores, and complete system diagnostics.</p>
+          </div>
+        </div>
+        <div class="services-cta">
+          <a href="services.html" class="btn btn-primary">View All Services</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hours and Location Section -->
+    <section class="hours-location">
+      <div class="container">
+        <div class="info-grid">
+          <div class="info-card">
+            <h3>Business Hours</h3>
+            <table class="hours-table">
+              <tr>
+                <td>Monday - Friday</td>
+                <td>7:30 AM - 6:00 PM</td>
+              </tr>
+              <tr>
+                <td>Saturday</td>
+                <td>8:00 AM - 3:00 PM</td>
+              </tr>
+              <tr>
+                <td>Sunday</td>
+                <td>Closed</td>
+              </tr>
+            </table>
+            <p class="hours-note">Drop-offs welcome before and after hours.</p>
+          </div>
+          <div class="info-card">
+            <h3>Visit Us</h3>
+            <address>
+              <strong>Leslie Auto Repair</strong><br>
+              8455 Oakland Park Blvd<br>
+              Sunrise, FL 33351
+            </address>
+            <p class="contact-info">
+              <strong>Phone:</strong> (954) 816-2450<br>
+              <strong>Email:</strong> leslieautorepair21@gmail.com
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <p><strong>Leslie Auto Repair</strong></p>
+      <p>8455 Oakland Park Blvd, Sunrise, FL 33351</p>
+      <p>Phone: (954) 816-2450</p>
+      <p>&copy; 2026 Leslie Auto Repair. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelector('.menu-toggle').addEventListener('click', function () {
+      document.querySelector('nav ul').classList.toggle('show');
+    });
+  </script>
+</body>
+
+</html>

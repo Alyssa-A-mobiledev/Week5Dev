@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Leslie Auto Repair</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="logo">Leslie <span>Auto Repair</span></a>
+      <button class="menu-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="appointment.html">Book Appointment</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <h1>About Us</h1>
+      <p>Serving South Florida drivers for over 25 years</p>
+    </section>
+
+    <!-- Our Story Section -->
+    <section class="about-story">
+      <div class="container">
+        <div class="story-content">
+          <h2>Our Story</h2>
+          <p>Leslie Auto Repair started with a simple idea: treat every customer the way you'd want to be treated. Back
+            in the late 1980s, Leslie saw too many shops cutting corners, overcharging for parts, and leaving customers
+            confused about what was actually wrong with their vehicles. He knew there had to be a better way.</p>
+          <p>With a toolbox, years of hands-on experience, and a commitment to doing things right, Leslie opened the
+            doors to his own shop in Sunrise, Florida. Word spread quickly. Neighbors told neighbors. One satisfied
+            customer became ten, then a hundred, then thousands.</p>
+          <p>Today, more than 25 years later, that same commitment drives everything we do.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mission and Values Section -->
+    <section class="about-values">
+      <div class="container">
+        <h2>Our Mission &amp; Values</h2>
+        <p class="section-subtitle">The principles that guide our work every day</p>
+        <div class="values-grid">
+          <div class="value-card">
+            <h3>Honesty First</h3>
+            <p>We tell you what your car needs—nothing more, nothing less. If a repair can wait, we'll let you know. If
+              something is urgent, we'll explain why. You'll never get a hard sell or unnecessary upsell from our team.
+            </p>
+          </div>
+          <div class="value-card">
+            <h3>Quality Work</h3>
+            <p>We fix it right the first time. Our technicians are ASE-certified and continuously trained on the latest
+              vehicles and technology. We use quality parts and stand behind every repair we make.</p>
+          </div>
+          <div class="value-card">
+            <h3>Fair Pricing</h3>
+            <p>No surprises on your bill. We provide detailed estimates before starting work and call you if anything
+              changes. Our prices are competitive, and we'll never charge for work we didn't do.</p>
+          </div>
+          <div class="value-card">
+            <h3>Respect Your Time</h3>
+            <p>We know your schedule matters. We work efficiently, communicate clearly about timelines, and do
+              everything we can to get you back on the road as quickly as possible without cutting corners.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="about-why">
+      <div class="container">
+        <h2>Why Customers Choose Us</h2>
+        <div class="why-content">
+          <div class="why-list">
+            <div class="why-item">
+              <h3>Experience You Can Trust</h3>
+              <p>With over 25 years serving the Sunrise and greater South Florida area, we've seen it all. From routine
+                oil changes to complex engine rebuilds, our team has the knowledge to diagnose problems accurately and
+                repair them efficiently.</p>
+            </div>
+            <div class="why-item">
+              <h3>We Work on All Makes and Models</h3>
+              <p>Whether you drive a Honda, Ford, BMW, Toyota, or anything in between, we have the tools and expertise
+                to service your vehicle. Domestic or import, new or classic—bring it to us.</p>
+            </div>
+            <div class="why-item">
+              <h3>Clear Communication</h3>
+              <p>No confusing jargon or vague explanations. We speak plainly about what's happening with your vehicle
+                and make sure you understand your options before any work begins. Questions are always welcome.</p>
+            </div>
+            <div class="why-item">
+              <h3>A Shop That Cares</h3>
+              <p>We're not a faceless chain—we're your neighbors. Many of our customers have been with us for years, and
+                some have brought multiple generations of their family. That kind of loyalty means everything to us, and
+                we work hard to deserve it.</p>
+            </div>
+          </div>
+          <div class="why-cta">
+            <p>Ready to experience the difference?</p>
+            <a href="appointment.html" class="btn btn-primary">Schedule Your Appointment</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <p><strong>Leslie Auto Repair</strong></p>
+      <p>8455 Oakland Park Blvd, Sunrise, FL 33351</p>
+      <p>Phone: (954) 816-2450</p>
+      <p>&copy; 2026 Leslie Auto Repair. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelector('.menu-toggle').addEventListener('click', function () {
+      document.querySelector('nav ul').classList.toggle('show');
+    });
+  </script>
+</body>
+
+</html>

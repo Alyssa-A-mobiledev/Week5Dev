@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Appointment - Leslie Auto Repair</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="logo">Leslie <span>Auto Repair</span></a>
+      <button class="menu-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="appointment.html" class="active">Book Appointment</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Page Header -->
+    <section class="page-header">
+      <h1>Book an Appointment</h1>
+      <p>Request your service appointment online</p>
+    </section>
+
+    <!-- Appointment Section -->
+    <section class="appointment-section">
+      <div class="container">
+        <div class="appointment-layout">
+
+          <!-- Appointment Form -->
+          <div class="appointment-form-wrapper">
+            <h2>Request an Appointment</h2>
+            <p class="form-intro">
+              Fill out the form below and we'll contact you to confirm your appointment.
+              For immediate assistance, call us at <strong>(954) 816-2450</strong>.
+            </p>
+
+            <form class="appointment-form" action="#" method="post">
+
+              <div class="form-group">
+                <label for="name">Full Name <span class="required">*</span></label>
+                <input type="text" id="name" required placeholder="John Smith">
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="email">Email Address <span class="required">*</span></label>
+                  <input type="email" id="email" required placeholder="john@example.com">
+                </div>
+                <div class="form-group">
+                  <label for="phone">Phone Number <span class="required">*</span></label>
+                  <input type="tel" id="phone" required placeholder="(555) 123-4567">
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="vehicle-year">Vehicle Year</label>
+                  <input type="text" id="vehicle-year" placeholder="2020">
+                </div>
+                <div class="form-group">
+                  <label for="vehicle-make">Make &amp; Model</label>
+                  <input type="text" id="vehicle-make" placeholder="Honda Accord">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="service">Service Needed <span class="required">*</span></label>
+                <select id="service" required>
+                  <option value="">Select a service...</option>
+                  <option>Oil Change</option>
+                  <option>Brake Service</option>
+                  <option>Engine Diagnostic</option>
+                  <option>A/C or Heating</option>
+                  <option>Transmission</option>
+                  <option>Suspension & Steering</option>
+                  <option>Electrical</option>
+                  <option>Tune-Up</option>
+                  <option>Inspection</option>
+                  <option>Other</option>
+                </select>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="date">Preferred Date <span class="required">*</span></label>
+                  <input type="date" id="date" required>
+                </div>
+                <div class="form-group">
+                  <label for="time">Preferred Time</label>
+                  <select id="time">
+                    <option>No preference</option>
+                    <option>Early Morning (7:30 - 9:00)</option>
+                    <option>Morning (9:00 - 11:00)</option>
+                    <option>Midday (11:00 - 1:00)</option>
+                    <option>Afternoon (1:00 - 4:00)</option>
+                    <option>Late Afternoon (4:00 - 6:00)</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Additional Details</label>
+                <textarea id="message" rows="4" placeholder="Tell us more about your vehicle..."></textarea>
+              </div>
+
+              <div class="form-group checkbox-group">
+                <label>
+                  <input type="checkbox">
+                  I'm interested in a rental car while my vehicle is being serviced
+                </label>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block">
+                Submit Appointment Request
+              </button>
+
+              <p class="form-note">
+                We'll contact you within one business day to confirm.
+              </p>
+
+            </form>
+
+            <div class="appointment-images">
+              <img src="images/Mercedes.jpg" alt="Service Area">
+              <img src="images/Maserati.jpg" alt="Rental Cars">
+            </div>
+          </div>
+
+          <!-- Sidebar -->
+          <aside class="appointment-sidebar">
+
+            <div class="sidebar-card">
+              <h3>What to Expect</h3>
+              <ol>
+                <li><strong>Confirmation</strong> – We’ll contact you within one business day.</li>
+                <li><strong>Drop Off</strong> – Bring your vehicle at your scheduled time.</li>
+                <li><strong>Diagnosis</strong> – We’ll call with findings and estimates.</li>
+                <li><strong>Pick Up</strong> – Pay when repairs are complete.</li>
+              </ol>
+            </div>
+
+            <div class="sidebar-card rental-card">
+              <h3>Need a Rental Car?</h3>
+              <p>Let us know when scheduling and we’ll help coordinate your rental.</p>
+            </div>
+
+            <!-- Contact Card -->
+            <div class="sidebar-card contact-card">
+              <h3>Contact Us Directly</h3>
+              <p>Prefer to call? We're happy to schedule your appointment over the phone.</p>
+              <p class="contact-phone">(954) 816-2450</p>
+              <div class="contact-hours">
+                <p><strong>Phone Hours:</strong></p>
+                <p>Mon - Fri: 7:30 AM - 6:00 PM</p>
+                <p>Saturday: 8:00 AM - 3:00 PM</p>
+              </div>
+              <address class="contact-address"> <strong>Leslie Auto Repair</strong><br> 8455 Oakland Park Blvd<br>
+                Sunrise, FL 33351 </address>
+              <p class="contact-email"> <strong>Email:</strong> leslieautorepair21@gmail.com </p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  </aside>
+
+  </div>
+  </div>
+  </section>
+
+  <!-- Rental Car Section -->
+  <section class="rental-section">
+    <div class="container">
+      <div class="rental-section-header">
+        <h2>Rental Car Services</h2>
+        <p>Need wheels while your vehicle is being serviced? We offer premium rental vehicles
+          +for your convenience.</p>
+      </div>
+
+      <div class="rental-layout">
+        <!-- Availability Calendar -->
+        <div class="rental-availability">
+          <h3>Rental Car Availability</h3>
+          <p class="availability-intro">Check our current vehicle availability below. Green da
+            +tes indicate availability; red dates are fully booked.</p>
+
+          <div class="calendar-wrapper">
+            <div class="calendar-header">
+              <span class="calendar-month">February 2026</span>
+            </div>
+            <div class="calendar-grid">
+              <div class="calendar-day-header">Sun</div>
+              <div class="calendar-day-header">Mon</div>
+              <div class="calendar-day-header">Tue</div>
+              <div class="calendar-day-header">Wed</div>
+              <div class="calendar-day-header">Thu</div>
+              <div class="calendar-day-header">Fri</div>
+              <div class="calendar-day-header">Sat</div>
+              <!-- Week 1 -->
+              <div class="calendar-day empty"></div>
+              <div class="calendar-day empty"></div>
+              <div class="calendar-day empty"></div>
+              <div class="calendar-day empty"></div>
+              <div class="calendar-day empty"></div>
+              <div class="calendar-day empty"></div>
+              <div class="calendar-day available">1</div>
+              <!-- Week 2 -->
+              <div class="calendar-day available">2</div>
+              <div class="calendar-day available">3</div>
+              <div class="calendar-day available">4</div>
+              <div class="calendar-day unavailable">5</div>
+              <div class="calendar-day unavailable">6</div>
+              <div class="calendar-day available">7</div>
+              <div class="calendar-day available">8</div>
+              <!-- Week 3 -->
+              <div class="calendar-day available">9</div>
+              <div class="calendar-day available">10</div>
+              <div class="calendar-day unavailable">11</div>
+              <div class="calendar-day unavailable">12</div>
+              <div class="calendar-day unavailable">13</div>
+              <div class="calendar-day available">14</div>
+              <div class="calendar-day available">15</div>
+              <!-- Week 4 -->
+              <div class="calendar-day available">16</div>
+              <div class="calendar-day available">17</div>
+              <div class="calendar-day available">18</div>
+              <div class="calendar-day available">19</div>
+              <div class="calendar-day unavailable">20</div>
+              <div class="calendar-day unavailable">21</div>
+              <div class="calendar-day available">22</div>
+              <!-- Week 5 -->
+              <div class="calendar-day available">23</div>
+              <div class="calendar-day available">24</div>
+              <div class="calendar-day available">25</div>
+              <div class="calendar-day available">26</div>
+              <div class="calendar-day available">27</div>
+              <div class="calendar-day available">28</div>
+              <div class="calendar-day empty"></div>
+            </div>
+            <div class="calendar-legend">
+              <div class="legend-item">
+                <span class="legend-color available"></span>
+                <span>Available</span>
+              </div>
+              <div class="legend-item">
+                <span class="legend-color unavailable"></span>
+                <span>Unavailable</span>
+              </div>
+            </div>
+          </div>
+
+          <p class="availability-note">Availability shown is approximate and subject to confirmation. We will verify
+            vehicle availability when we contact you about your request.</p>
+        </div>
+
+        <!-- Rental Request Form -->
+        <div class="rental-form-wrapper">
+          <h3>Request a Rental Car</h3>
+          <p class="form-intro">Complete the form below to request a rental vehicle. We'll confirm availability and
+            contact you with details.</p>
+
+          <form class="rental-form" action="#" method="post">
+            <div class="form-group">
+              <label for="rental-name">Full Name <span class="required">*</span></label>
+              <input type="text" id="rental-name" name="rental-name" required placeholder="John Smith">
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="rental-email">Email Address <span class="required">*</span></label>
+                <input type="email" id="rental-email" name="rental-email" required placeholder="john@example.com">
+              </div>
+              <div class="form-group">
+                <label for="rental-phone">Phone Number <span class="required">*</span></label>
+                <input type="tel" id="rental-phone" name="rental-phone" required placeholder="
+          +(555) 123-4567">
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="rental-start">Rental Start Date <span class="required">*</span></label>
+                <input type="date" id="rental-start" name="rental-start" required>
+              </div>
+              <div class="form-group">
+                <label for="rental-end">Rental End Date <span class="required">*</span></label>
+                <input type="date" id="rental-end" name="rental-end" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="rental-vehicle">Vehicle Preference <span class="required">*</span></label>
+              <select id="rental-vehicle" name="rental-vehicle" required>
+                <option value="">Select a vehicle...</option>
+                <option value="maserati-ghibli">Maserati Ghibli</option>
+                <option value="mercedes-glc-coupe">Mercedes-Benz GLC Coupe</option>
+                <option value="mercedes-gle-350">Mercedes-Benz GLE 350</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="rental-purpose">Purpose of Rental <span class="required">*</span></l +abel>
+                <select id="rental-purpose" name="rental-purpose" required>
+                  <option value="">Select purpose...</option>
+                  <option value="service">While my vehicle is being serviced</option>
+                  <option value="personal">Personal use</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+              <label for="rental-notes">Additional Notes</label>
+              <textarea id="rental-notes" name="rental-notes" rows="3"
+                placeholder="Any special requests or additional information..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block">Submit Rental Request</button>
+            <p class="form-note">Rental requests are subject to availability. We'll contact you to confirm your
+              reservation.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="footer-content">
+      <p><strong>Leslie Auto Repair</strong></p>
+      <p>8455 Oakland Park Blvd, Sunrise, FL 33351</p>
+      <p>Phone: (954) 816-2450</p>
+      <p>&copy; 2026 Leslie Auto Repair. All rights reserved.</p>
+    </div>
+  </footer>
